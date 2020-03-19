@@ -93,19 +93,45 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="install-git-and-node"><a href="#install-git-and-node" class="headerlink" title="install git and node"></a>install git and node</h1><h2 id="install-git-and-config"><a href="#install-git-and-config" class="headerlink" title="install git and config"></a>install git and config</h2><h1 id="config-git"><a href="#config-git" class="headerlink" title="config git"></a>config git</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;****&quot;</span><br><span class="line">git config --global user.email &quot;**@**.com&quot;</span><br></pre></td></tr></table></figure>
+        <h2 id="git-install-amp-configure"><a href="#git-install-amp-configure" class="headerlink" title="git install &amp; configure"></a>git install &amp; configure</h2><p>config</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;****&quot;</span><br><span class="line">git config --global user.email &quot;**@**.com&quot;</span><br></pre></td></tr></table></figure>
 <p>check the config</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
 
 
-<h2 id="install-node-and-configure"><a href="#install-node-and-configure" class="headerlink" title="install node and configure"></a>install node and configure</h2><p>check</p>
+<h2 id="node-install-amp-configure"><a href="#node-install-amp-configure" class="headerlink" title="node install  &amp; configure"></a>node install  &amp; configure</h2><p>check</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 
 <p>install mirror  in mainland of china, the <strong>cnpm</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line"># check</span><br><span class="line"></span><br><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
 
-<h3 id="download-hexo-by-cnpm"><a href="#download-hexo-by-cnpm" class="headerlink" title="download hexo by cnpm"></a>download hexo by cnpm</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"># check</span><br><span class="line"></span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-<p>tes</p>
+<h3 id="hexo-install-by-cnpm"><a href="#hexo-install-by-cnpm" class="headerlink" title="hexo install  by cnpm"></a>hexo install  by cnpm</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"># check</span><br><span class="line"></span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h2 id="local-folder-for-blog"><a href="#local-folder-for-blog" class="headerlink" title="local folder for blog"></a>local folder for blog</h2><p>right click  <strong>git bash here</strong></p>
+<p>hexo initialize</p>
+<p><code>hexo init</code></p>
+<p>npm install dependented package</p>
+<p><code>npm install</code></p>
+<h2 id="create-blog-reponsitory"><a href="#create-blog-reponsitory" class="headerlink" title="create blog reponsitory"></a>create blog reponsitory</h2><p>name it <strong>username.github.io</strong></p>
+<p>copy the web URL with https<br>##configure yml in blog folder</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: web URL</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<h2 id="generate-and-deploy"><a href="#generate-and-deploy" class="headerlink" title="generate and deploy"></a>generate and deploy</h2><p><code>hexo g</code><br><code>hexo d</code></p>
+<h2 id="atom-package"><a href="#atom-package" class="headerlink" title="atom package"></a>atom package</h2><ul>
+<li><p>Markdown Preview Plus (MPP)</p>
+</li>
+<li><p>platformio-ide-terminal</p>
+<ul>
+<li><p>shell override</p>
+<p>change defualt parameters to  cmd  by the local path</p>
+</li>
+<li><p>shortcut<br>ctrl + `</p>
+</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
